@@ -1,0 +1,37 @@
+HOW-TO
+
+########################
+###
+### Como está montado
+###
+########################
+
+1  - O servidor está na hetzner
+2  - Dominio (mariomourao.com) está registado no namecheap.cpm
+3 - Gestão do dominio é feita através do cloudflare
+
+Como configurar o dominio do namecheap através do cloudfare podes ver aqui:
+
+https://www.namecheap.com/support/knowledgebase/article.aspx/9607/2210/how-to-set-up-dns-records-for-your-domain-in-cloudflare-account
+
+########################
+###
+### Como meter a correr o site
+###
+########################
+## Maquina local
+1 - sincronizar com o servidor
+
+rsync -azv landingPage root@138.201.119.116:.
+
+## Maquina Servidor
+
+1 - cd landingPage
+
+2 - docker build -t mmourao/gohugo . 
+
+3 - docker stop gohugo 
+
+4 - docker rm gohugo 
+
+5 - docker run -d --restart=always --name gohugo -p 80:80 mmourao/gohugo

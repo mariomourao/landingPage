@@ -1,0 +1,88 @@
+# Site settings
+baseurl = "http://mariomourao.com" #without ending slash
+languageCode = "en-us"
+theme = "hugo-identity-theme"
+title = "Mário Mourão"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-77767770-1"
+
+[params]
+	
+	# Images settings
+	# Icons, backgrounds and avatars folders are placed in theme's static/images folder.
+	# You may place your images in corresponding folders and then set only filenames below to
+	# change page's appearance
+	
+	favicon = "favicon.ico"
+	appletouchicon = "apple-touch-icon-152x152.png"
+	background = "bg3.jpg"
+	avatar = "mario.jpg"
+	
+	# Personal settings
+	
+    name = "Mário Mourão"
+	position = "Senior Software Engineer"
+	
+	# Extra stuff
+	# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
+	# You can play with it downlading original theme right here:
+	# html5up.net/identity/download
+	#
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+	# - enable form by setting 'enable' to 'true'
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	
+	email = "mariomourao@gmail.com"
+	
+	# Contact form settings
+		
+	[params.contact]
+		enable = false
+		formTitle = "Touch Me!"
+		namePlaceholder = "Name"
+		emailPlaceholder = "Email"
+		messagePlaceholder = "Message"
+		buttonText = "Send it"
+		
+	# Social settings
+	# You may change these with your social links or add others
+
+	[[params.social]]
+		title = "linkedin"
+		icon = "fa-linkedin"
+		link = "https://pt.linkedin.com/in/mário-mourão-57548129"
+
+	[[params.social]]
+		title = "github"
+		icon = "fa-github"
+		link = "https://github.com/mariomourao"
+
+	[[params.social]]
+		title = "stack-overflow"
+		icon = "fa-stack-overflow"
+		link = "https://stackoverflow.com/users/1226266/mario-mourao"
+
+	[[params.social]]
+		title = "Twitter"
+		icon = "fa-twitter"
+		link = "https://twitter.com/mariomourao"
+		
+	[[params.social]]
+		title = "Facebook"
+		icon = "fa-facebook"
+		link = "https://www.facebook.com/mario.mourao1"
+	
+	# Footer settings
+	[params.footer]
+		copyright = "Mário Mourão"
+		
