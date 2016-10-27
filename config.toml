@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://github.com/mariomourao/mariomourao.github.io/tree/master" #without ending slash
+baseurl = "https://mariomourao.github.io" #without ending slash
 languageCode = "en-us"
 theme = "hugo-identity-theme"
 title = "Mário Mourão"
